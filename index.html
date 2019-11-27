@@ -84,6 +84,10 @@
         </div>
 
         <script>
+            sing.onclick = function() {
+                song.play();
+            }
+            
             var images = [
                 { src: 'images/1.jpg' },
                 { src: 'images/2.jpg' },
@@ -98,9 +102,7 @@
                 { src: 'images/21.jpg' }
             ];
 
-            sing.onclick = function() {
-                song.play();
-            }
+            
 
             window.onload = function () {
                 var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
